@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { useTheme } from './hooks/useTheme';
 import { useFavorites } from './hooks/useFavorites';
 import { StarfieldCanvas } from './components/StarfieldCanvas';
@@ -89,6 +90,7 @@ export default function App() {
           initialCategoryId={initialSelectedCategoryId}
         />
       )}
+      <SpeedInsights />
     </div>
   );
 }
